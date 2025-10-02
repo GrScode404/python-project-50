@@ -16,4 +16,4 @@ lint:
 fixlint:
 	uv run ruff check gendiff --fix
 
-.PHONY: gendiff install lint fixlint
+.PHONY: gendiff install lint fixlintbi
