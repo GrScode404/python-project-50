@@ -2,7 +2,7 @@ install:
 	uv sync
 
 gendiff:
-	uv run gendiff
+	uv run gendiff data/file1.json data/file2.json
 
 build:
 	uv build
