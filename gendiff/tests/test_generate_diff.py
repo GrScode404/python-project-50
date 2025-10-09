@@ -21,10 +21,10 @@ def test_generate_diff():
 
     assert result.strip() == expected.strip()
 
+
 def test_same_data_generate_diff():
     current_dir = os.path.dirname(__file__)
     file1 = os.path.join(current_dir, "test_data", "file1.json")
-    file2 = os.path.join(current_dir, "test_data", "file1.json")
 
     expected = """{
     follow: False
