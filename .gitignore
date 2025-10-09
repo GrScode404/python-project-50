@@ -202,5 +202,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-#data for tests:
-/data
+#test_data for tests:
+/gendiff/tests/test_data

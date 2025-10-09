@@ -2,7 +2,7 @@ install:
 	uv sync
 
 gendiff:
-	uv run gendiff data/file1.json data/file2.json
+	uv run gendiff gendiff/tests/test_data/file1.json gendiff/tests/test_data/file2.json
 
 build:
 	uv build
@@ -15,5 +15,8 @@ lint:
 
 fixlint:
 	uv run ruff check gendiff --fix
+
+test:
+	uv run pytest -v
 
 .PHONY: gendiff install lint fixlint
