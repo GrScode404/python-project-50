@@ -17,6 +17,9 @@ fixlint:
 	uv run ruff check gendiff --fix
 
 test:
-	uv run pytest -v
+	uv run pytest
+
+test-coverage:
+	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
 
 .PHONY: gendiff install lint fixlint
