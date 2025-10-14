@@ -22,4 +22,4 @@ test:
 test-coverage:
 	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
 
-.PHONY: gendiff install lint fixlint
+.PHONY: gendiff install lint fixlint test-coverage
