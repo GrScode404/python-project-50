@@ -2,7 +2,7 @@ install:
 	uv sync
 
 gendiff:
-	uv run gendiff gendiff/tests/test_data/file1.json gendiff/tests/test_data/file2.json
+	uv run gendiff tests/test_data/file1.json tests/test_data/file2.json
 
 build:
 	uv build
