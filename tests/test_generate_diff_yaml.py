@@ -12,8 +12,8 @@ def read_file(filepath):
 
 def test_generate_diff():
     current_dir = os.path.dirname(__file__)
-    file1 = os.path.join(current_dir, "test_data", "file1.json")
-    file2 = os.path.join(current_dir, "test_data", "file2.json")
+    file1 = os.path.join(current_dir, "test_data", "file1.yaml")
+    file2 = os.path.join(current_dir, "test_data", "file2.yaml")
 
     expected = read_file(os.path.join(current_dir, "test_data", "expected_diff.txt"))
 
@@ -24,7 +24,7 @@ def test_generate_diff():
 
 def test_same_data_generate_diff():
     current_dir = os.path.dirname(__file__)
-    file1 = os.path.join(current_dir, "test_data", "file1.json")
+    file1 = os.path.join(current_dir, "test_data", "file1.yaml")
 
     expected = read_file(os.path.join(current_dir, "test_data", "expected_diff_same.txt"))
 
@@ -35,4 +35,4 @@ def test_same_data_generate_diff():
 
 def test_generate_diff_file_not_found():
     with pytest.raises(FileNotFoundError):
-        generate_diff("no_file1.json", "no_file2.json")
+        generate_diff("no_file1.yaml", "no_file2.yaml")

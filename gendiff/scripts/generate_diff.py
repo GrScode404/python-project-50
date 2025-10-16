@@ -1,5 +1,7 @@
 import json
 
+from gendiff.scripts.parse_file import parse_file
+
 
 def read_json(file_path):
     with open(file_path) as f:
@@ -7,8 +9,8 @@ def read_json(file_path):
 
 
 def generate_diff(file_path1, file_path2):
-    data1 = read_json(file_path1)
-    data2 = read_json(file_path2)
+    data1 = parse_file(file_path1)
+    data2 = parse_file(file_path2)
     result_diff = ["{"]
 
     all_keys = sorted(set(data1.keys()) | set(data2.keys()))
