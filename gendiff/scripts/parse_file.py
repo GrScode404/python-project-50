@@ -1,7 +1,7 @@
-import os
-import yaml
 import json
+import os
 
+import yaml
 
 
 def parse_file(filepath):
