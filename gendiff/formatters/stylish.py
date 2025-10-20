@@ -14,6 +14,7 @@ def stringify(value, depth):
     else:
         return str(value)
 
+
 def format_stylish(diff, depth=1):
     lines = []
     indent = '    ' * (depth - 1)
