@@ -30,7 +30,7 @@ def test_same_data_generate_diff():
 
     result = generate_diff(file1, file1)
 
-    assert result.strip() == expected
+    assert result == expected
 
 
 def test_generate_diff_file_not_found():
