@@ -3,11 +3,7 @@ import os.path
 import pytest
 
 from gendiff.scripts.generate_diff import generate_diff
-
-
-def read_file(filepath):
-    with open(filepath, "r") as f:
-        return f.read().strip()
+from tests.test_generate_diff import read_file
 
 
 def test_generate_diff():
