@@ -15,7 +15,13 @@ def test_generate_diff():
     file1 = os.path.join(current_dir, "test_data", "file1.json")
     file2 = os.path.join(current_dir, "test_data", "file2.json")
 
-    expected = read_file(os.path.join(current_dir, "test_data", "expected_diff.txt"))
+    expected = read_file(
+        os.path.join(
+            current_dir,
+            "test_data",
+            "expected_diff.txt"
+        )
+    )
 
     result = generate_diff(file1, file2)
 
@@ -26,7 +32,13 @@ def test_same_data_generate_diff():
     current_dir = os.path.dirname(__file__)
     file1 = os.path.join(current_dir, "test_data", "file1.json")
 
-    expected = read_file(os.path.join(current_dir, "test_data", "expected_diff_same.txt"))
+    expected = read_file(
+        os.path.join(
+            current_dir,
+            "test_data",
+            "expected_diff_same.txt"
+        )
+    )
 
     result = generate_diff(file1, file1)
 

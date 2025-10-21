@@ -9,7 +9,13 @@ def test_format_plain():
     file1 = os.path.join(current_dir, "test_data", "file1.json")
     file2 = os.path.join(current_dir, "test_data", "file2.json")
 
-    expected = read_file(os.path.join(current_dir, "test_data", "expected_diff_plain.txt"))
+    expected = read_file(
+        os.path.join(
+            current_dir,
+            "test_data",
+            "expected_diff_plain.txt"
+        )
+    )
 
     result = generate_diff(file1, file2, 'plain')
 
