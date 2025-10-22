@@ -41,7 +41,7 @@ ___
 ### Usage
 ___
 Compare two configuration files:
-```bash
+```
 gendiff <path_to_file1> <path_to_file2>
 ```
 ### Examples
