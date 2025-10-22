@@ -55,7 +55,7 @@ gendiff --format plain tests/test_data/file1.json tests/test_data/file2.json
 ```
 JSON format:
 ```
-gendiff --format json tests/test_data/file1.yml tests/test_data/file2.yml
+gendiff --format json tests/test_data/file1.yaml tests/test_data/file2.yaml
 ```
 
 
