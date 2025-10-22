@@ -42,6 +42,11 @@ ___
 ___
 Compare two configuration files:
 ```bash
+gendiff <path_to_file1> <path_to_file2>
+```
+### Examples
+Stylish (default):
+```bash
 gendiff tests/test_data/file1.json tests/test_data/file2.json
 ```
 Plain format:
