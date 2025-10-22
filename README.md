@@ -21,15 +21,15 @@ It supports JSON and YAML formats and provides several output styles:
 ### 🛠 Installation
 ___
 1. Clone the repository and install dependencies:
-```bash
+```
 git clone https://github.com/GrScode404/python-project-50.git
 ```
 2. Navigate to the project directory:
-```bash
+```
 cd python-project-50
 ```
 3. Install the dependencies
-```bash
+```
 make install
 ```
 ### Supported file types
@@ -46,15 +46,15 @@ gendiff <path_to_file1> <path_to_file2>
 ```
 ### Examples
 Stylish (default):
-```bash
+```
 gendiff tests/test_data/file1.json tests/test_data/file2.json
 ```
 Plain format:
-```bash
+```
 gendiff --format plain tests/test_data/file1.json tests/test_data/file2.json
 ```
 JSON format:
-```bash
+```
 gendiff --format json tests/test_data/file1.yml tests/test_data/file2.yml
 ```
 
